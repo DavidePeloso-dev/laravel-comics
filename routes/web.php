@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ComicController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 
@@ -37,3 +38,5 @@ Route::get('/fans', [PagesController::class, 'incomplete'])->name('fans');
 Route::get('/', [PagesController::class, 'index']);
 
 Route::get('/comics', [PagesController::class, 'comics'])->name('comics');
+
+Route::resource('admin/comics', ComicController::class);

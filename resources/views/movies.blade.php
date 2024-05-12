@@ -17,7 +17,7 @@
             @endforeach
         </div>
         <div class="row jc-center">
-            <div class="btn text-up pointer"> load more</div>
+            <div class="btn btn-primary rounded-0 text-up pointer"> load more</div>
         </div>
     </div>
 </section>

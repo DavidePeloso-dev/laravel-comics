@@ -10,14 +10,16 @@
             @foreach($comics as $comic)
             <div class="col-6">
                 <div class="dc-element pointer">
-                    <img class="cover" src="{{$comic['thumb']}}" alt="">
+                    <a href="{{route('comics.edit',$comic)}}">
+                        <img class="cover" src="{{$comic['thumb']}}" alt="">
+                    </a>
                     <h5 class="mt-1">{{$comic['title']}}</h5>
                 </div>
             </div>
             @endforeach
         </div>
         <div class="row jc-center">
-            <div class="btn text-up pointer"> load more</div>
+            <div class="btn btn-primary rounded-0 text-up pointer"> load more</div>
         </div>
     </div>
 </section>
